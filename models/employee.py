@@ -9,7 +9,6 @@ class Employee(models.Model):
     _name = 'employee.management'
     _description = 'Employee Management'
     
-    # _inherits={'res.partner':'officer_id'}
        
     roll_number=fields.Integer(string="Roll Number")
     checker=fields.Integer(string="Checker")
