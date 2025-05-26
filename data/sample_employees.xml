@@ -1,0 +1,16 @@
+<odoo>
+  <data noupdate="0">
+
+<record id="employee_mit" model="employee.management">
+  <field name="name">mit</field>
+  <field name="department">HR</field>
+  <field name="job_title">Manager</field>
+  <field name="expi">5</field>
+  <field name="age">30</field>
+  <field name="salary">50000</field>
+  <field name="is_active">true</field>
+  <field name="address">New York, USA</field>
+</record>
+
+  </data>
+</odoo>

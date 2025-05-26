@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+            <!-- the user which is login can only see its own records -->
+        <record id="employee_management_rule_see_own" model="ir.rule">
+            <field name="name">See Own Employees</field>
+            <field name="model_id" ref="model_employee_management"/>
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="0"/>
+            <field name="perm_create" eval="0"/>
+            <field name="perm_unlink" eval="0"/>
+        </record>
+
+    </data>
+</odoo>

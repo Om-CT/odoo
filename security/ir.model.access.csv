@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_employee_management,employee.management,model_employee_management,base.group_user,1,1,1,1
+access_employee_job_history,Employee Job History,model_employee_job_history,,1,1,1,1
+access_employee_skill,access.employee.skill,model_employee_skill,,1,1,1,1
+access_employee_find,employee.find,model_employee_find,,1,1,1,1
+access_wizard_mark_done,wizard.mark.done,model_wizard_mark_done,,1,1,1,1
