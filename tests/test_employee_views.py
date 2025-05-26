@@ -8,12 +8,14 @@ class TestEmployeeEmail(TransactionCase):
         super().setUp()
         self.Employee = self.env['employee.management']
 
-    def _validate_email(self, email):
+    @staticmethod
+    def _validate_email(email):
         email_regex = r"^[\w\.-]+@[\w\.-]+\.\w+$"
         if email and not re.match(email_regex, email):
             raise ValidationError(f"Invalid email format: {email}")
 
-    def _validate_phone(self, phone):
+    @staticmethod
+    def _validate_phone(phone):
         phone_regex = r'^\+?\d{10,15}$'
         if phone and not re.match(phone_regex, phone):
             raise ValidationError(f"Invalid phone number format: {phone}")
