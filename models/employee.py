@@ -138,7 +138,8 @@ class Employee(models.Model):
             if record.phone and not re.match(phone_regex, record.phone):
                 raise ValidationError(f"Invalid phone number format: {record.phone}")
 
-    def get_current_time(self):
+    @staticmethod
+    def get_current_time():
         return fields.Datetime.now()
 
     def action_add_current_time(self):
